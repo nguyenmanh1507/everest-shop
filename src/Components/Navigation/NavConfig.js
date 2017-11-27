@@ -17,7 +17,7 @@ type navItemsType = Array<{
   }>
 }>
 
-const navItems: navItemsType = [
+const navItemsConfig: navItemsType = [
   {
     title: 'Home',
     path: '/',
@@ -141,4 +141,4 @@ const navItems: navItemsType = [
   }
 ]
 
-export default navItems
+export default navItemsConfig
