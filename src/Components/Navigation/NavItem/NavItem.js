@@ -5,49 +5,9 @@ import uniqueId from 'lodash/uniqueId'
 import cx from 'classnames'
 import { NavLink } from 'react-router-dom'
 
-type State = {
-  isOpen: boolean
-}
-
-type Props = {
-  item: Object
-}
-
-class NavItem extends Component<Props, State> {
-  navItem: ?HTMLDivElement
-
-  state = {
-    isOpen: false
-  }
-
-  openTimeout = null
-  closeTimeout = null
-
-  openSubMenu = () => {
-    this.setState({
-      isOpen: true
-    })
-  }
-
-  closeSubMenu = () => {
-    this.setState({
-      isOpen: false
-    })
-  }
-
-  handleMouseEnter = () => {
-    this.openTimeout = setTimeout(this.openSubMenu, 400)
-    clearTimeout(this.closeTimeout)
-  }
-
-  handleMouseLeave = () => {
-    this.closeTimeout = setTimeout(this.closeSubMenu, 400)
-    clearTimeout(this.openTimeout)
-  }
-
+class NavItem extends Component<{}> {
   render() {
-    const { item } = this.props
-    const { isOpen } = this.state
+    const { item, isOpen, handleMouseEnter, handleMouseLeave } = this.props
 
     return (
       <div
@@ -55,11 +15,8 @@ class NavItem extends Component<Props, State> {
           'has-dropdown': item.dropdown,
           'has-mega': item.megaMenu
         })}
-        ref={el => {
-          this.navItem = el
-        }}
-        onMouseEnter={this.handleMouseEnter}
-        onMouseLeave={this.handleMouseLeave}
+        onMouseEnter={handleMouseEnter}
+        onMouseLeave={handleMouseLeave}
       >
         <NavLink
           to={item.path}

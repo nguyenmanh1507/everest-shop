@@ -24,20 +24,50 @@ const navItemsConfig: navItemsType = [
     exact: true
   },
   {
-    title: 'Features',
-    path: '/features',
-    dropdown: [
+    title: 'Women',
+    path: '/women',
+    megaMenu: [
       {
-        title: 'Support Center',
-        path: '/support'
+        title: 'Clothing',
+        items: [
+          {
+            title: 'Shirts',
+            path: '/women/clothing/shirts'
+          },
+          {
+            title: 'Sweaters',
+            path: '/women/clothing/sweaters'
+          },
+          {
+            title: 'Pants',
+            path: '/women/clothing/pants'
+          },
+          {
+            title: 'Jeans',
+            path: '/women/clothing/jeans'
+          }
+        ]
       },
       {
-        title: 'Delivery',
-        path: '/delivery'
-      },
-      {
-        title: 'Smartphone',
-        path: '/smartphone'
+        title: 'Clothing',
+        items: [
+          {
+            title: 'Shirts',
+            path: '/women/clothing/shirts'
+          },
+          {
+            title: 'Sweaters',
+            path: '/women/clothing/sweaters'
+          },
+          {
+            title: 'Pants',
+            path: '/women/clothing/pants'
+          },
+          {
+            title: 'Jeans',
+            path: '/women/clothing/jeans'
+          }
+        ]
       }
     ]
   },
@@ -45,69 +75,6 @@ const navItemsConfig: navItemsType = [
     title: 'Men',
     path: '/men',
     megaMenu: [
-      {
-        title: 'Clothing',
-        items: [
-          {
-            title: 'Shirts',
-            path: '/men/clothing/shirts'
-          },
-          {
-            title: 'Sweaters',
-            path: '/men/clothing/sweaters'
-          },
-          {
-            title: 'Pants',
-            path: '/men/clothing/pants'
-          },
-          {
-            title: 'Jeans',
-            path: '/men/clothing/jeans'
-          }
-        ]
-      },
-      {
-        title: 'Clothing',
-        items: [
-          {
-            title: 'Shirts',
-            path: '/men/clothing/shirts'
-          },
-          {
-            title: 'Sweaters',
-            path: '/men/clothing/sweaters'
-          },
-          {
-            title: 'Pants',
-            path: '/men/clothing/pants'
-          },
-          {
-            title: 'Jeans',
-            path: '/men/clothing/jeans'
-          }
-        ]
-      },
-      {
-        title: 'Clothing',
-        items: [
-          {
-            title: 'Shirts',
-            path: '/men/clothing/shirts'
-          },
-          {
-            title: 'Sweaters',
-            path: '/men/clothing/sweaters'
-          },
-          {
-            title: 'Pants',
-            path: '/men/clothing/pants'
-          },
-          {
-            title: 'Jeans',
-            path: '/men/clothing/jeans'
-          }
-        ]
-      },
       {
         title: 'Clothing',
         items: [
