@@ -9,15 +9,17 @@ type Props = {
   /** Child elements */
   children: any,
   /** Remove grid gutter */
-  noGutter?: boolean
+  noGutter?: boolean,
+  /** Extra class names */
+  exClass?: string
 }
 
 class GridXContainer extends PureComponent<Props> {
   render() {
-    const { noGutter, children } = this.props
+    const { noGutter, children, exClass } = this.props
 
     return (
-      <GridContainer>
+      <GridContainer exClass={exClass}>
         <GridX noGutter={noGutter}>{children}</GridX>
       </GridContainer>
     )
