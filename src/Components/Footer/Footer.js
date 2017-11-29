@@ -1,6 +1,7 @@
 // @flow
 
 import React, { Component } from 'react'
+import { Link } from 'react-router-dom'
 
 class Footer extends Component<{}> {
   render() {
@@ -37,29 +38,29 @@ class Footer extends Component<{}> {
                 </div>
                 <ul className="list-unstyled text-small">
                   <li className="mb-md">
-                    <a href="#" className="text-muted">
+                    <Link to="/" className="text-muted">
                       SiteMap
-                    </a>
+                    </Link>
                   </li>
                   <li className="mb-md">
-                    <a href="#" className="text-muted">
+                    <Link to="/" className="text-muted">
                       Search Terns
-                    </a>
+                    </Link>
                   </li>
                   <li className="mb-md">
-                    <a href="#" className="text-muted">
+                    <Link to="/" className="text-muted">
                       Advanced Search
-                    </a>
+                    </Link>
                   </li>
                   <li className="mb-md">
-                    <a href="#" className="text-muted">
+                    <Link to="/" className="text-muted">
                       About Us
-                    </a>
+                    </Link>
                   </li>
                   <li className="mb-md">
-                    <a href="#" className="text-muted">
+                    <Link to="/" className="text-muted">
                       Contact Us
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </div>
@@ -69,29 +70,29 @@ class Footer extends Component<{}> {
                 </div>
                 <ul className="list-unstyled text-small">
                   <li className="mb-md">
-                    <a href="#" className="text-muted">
+                    <Link to="/" className="text-muted">
                       My voucher
-                    </a>
+                    </Link>
                   </li>
                   <li className="mb-md">
-                    <a href="#" className="text-muted">
+                    <Link to="/" className="text-muted">
                       Login
-                    </a>
+                    </Link>
                   </li>
                   <li className="mb-md">
-                    <a href="#" className="text-muted">
+                    <Link to="/" className="text-muted">
                       My Cart
-                    </a>
+                    </Link>
                   </li>
                   <li className="mb-md">
-                    <a href="#" className="text-muted">
+                    <Link to="/" className="text-muted">
                       WishLisht
-                    </a>
+                    </Link>
                   </li>
                   <li className="mb-md">
-                    <a href="#" className="text-muted">
+                    <Link to="/" className="text-muted">
                       Checkout
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </div>
@@ -101,29 +102,29 @@ class Footer extends Component<{}> {
                 </div>
                 <ul className="list-unstyled text-small">
                   <li className="mb-md">
-                    <a href="#" className="text-muted">
+                    <Link to="/" className="text-muted">
                       Money Back
-                    </a>
+                    </Link>
                   </li>
                   <li className="mb-md">
-                    <a href="#" className="text-muted">
+                    <Link to="/" className="text-muted">
                       Free Shipping
-                    </a>
+                    </Link>
                   </li>
                   <li className="mb-md">
-                    <a href="#" className="text-muted">
+                    <Link to="/" className="text-muted">
                       Support
-                    </a>
+                    </Link>
                   </li>
                   <li className="mb-md">
-                    <a href="#" className="text-muted">
+                    <Link to="/" className="text-muted">
                       Orders & Returns
-                    </a>
+                    </Link>
                   </li>
                   <li className="mb-md">
-                    <a href="#" className="text-muted">
+                    <Link to="/" className="text-muted">
                       Gif Vourcher
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </div>

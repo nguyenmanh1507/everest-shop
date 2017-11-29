@@ -40,9 +40,9 @@ class Header extends Component<{}> {
                       USD <i className="fa fa-caret-down" />
                     </li>
                     <li>
-                      <a href="#" className="text-muted">
+                      <Link to="/" className="text-muted">
                         Your Account
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </div>
@@ -81,13 +81,13 @@ class Header extends Component<{}> {
                   </div>
                 </div>
               </div>
-              <a href="#" className="d-flex">
+              <Link to="/" className="d-flex">
                 <i className="fa fa-shopping-bag fa-2x" />
                 <div className="ml-sm">
                   <div className="text-muted text-small">Your Cart (2)</div>
                   <div className="text-bold">$89.00</div>
                 </div>
-              </a>
+              </Link>
             </div>
           </div>
         </div>
