@@ -1,7 +1,10 @@
 // @flow
 
 import React, { Component } from 'react'
-import Navigation from '../Navigation'
+import { Link } from 'react-router-dom'
+
+import Navigation from 'Components/Navigation'
+import logoImage from '../../static/images/logo.png'
 
 class Header extends Component<{}> {
   render() {
@@ -51,9 +54,9 @@ class Header extends Component<{}> {
           <div className="grid-x grid-padding-x align-items-center py-lg">
             <div className="medium-5 cell">
               <h1 className="m-0">
-                <a href="#">
-                  <img src="/images/logo.png" alt="" />
-                </a>
+                <Link to="/">
+                  <img src={logoImage} alt="Logo" />
+                </Link>
               </h1>
             </div>
             <div className="medium-7 cell d-flex">

@@ -5,7 +5,14 @@ import uniqueId from 'lodash/uniqueId'
 import cx from 'classnames'
 import { NavLink } from 'react-router-dom'
 
-class NavItem extends Component<{}> {
+type Props = {
+  item: Object,
+  isOpen: boolean,
+  handleMouseEnter: () => void,
+  handleMouseLeave: () => void
+}
+
+class NavItem extends Component<Props> {
   render() {
     const { item, isOpen, handleMouseEnter, handleMouseLeave } = this.props
 
