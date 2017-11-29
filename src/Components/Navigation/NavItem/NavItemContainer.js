@@ -41,6 +41,11 @@ class NavItemContainer extends Component<Props, State> {
     clearTimeout(this.openTimeout)
   }
 
+  componentWillUnmount() {
+    clearTimeout(this.openTimeout)
+    clearTimeout(this.closeTimeout)
+  }
+
   render() {
     const { item } = this.props
     const { isOpen } = this.state
