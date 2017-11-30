@@ -1,0 +1,57 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Breadcrumb render properly 1`] = `
+<div
+  className="bg-gray py-sm"
+>
+  <div
+    className="grid-container cell"
+  >
+    <div
+      className="d-flex align-items-center"
+    >
+      <a
+        className="text-muted mr-sm"
+        data-test="bc-homepage-link"
+        href="/"
+        onClick={[Function]}
+      >
+        <i
+          className="fa fa-home"
+        />
+      </a>
+      <i
+        className="fa fa-caret-right text-muted mr-sm"
+      />
+      <a
+        className="text-small mr-sm"
+        data-test="bc-item"
+        href="/women"
+        onClick={[Function]}
+      >
+        Women
+      </a>
+      <i
+        className="fa fa-caret-right text-muted mr-sm"
+      />
+      <a
+        className="text-small mr-sm"
+        data-test="bc-item"
+        href="/women/clothing"
+        onClick={[Function]}
+      >
+        Clothing
+      </a>
+      <i
+        className="fa fa-caret-right text-muted mr-sm"
+      />
+      <span
+        className="text-small text-muted"
+        data-test="bc-item"
+      >
+        Jeans
+      </span>
+    </div>
+  </div>
+</div>
+`;

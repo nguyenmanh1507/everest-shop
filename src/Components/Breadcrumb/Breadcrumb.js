@@ -23,7 +23,11 @@ class Breadcrumb extends Component<Props> {
       <div className="bg-gray py-sm">
         <GridContainer exClass="cell">
           <div className="d-flex align-items-center">
-            <Link to="/" className="text-muted mr-sm">
+            <Link
+              to="/"
+              className="text-muted mr-sm"
+              data-test="bc-homepage-link"
+            >
               <i className="fa fa-home" />
             </Link>
             {newUrl.map((u, index) => {
@@ -33,7 +37,11 @@ class Breadcrumb extends Component<Props> {
                     className="fa fa-caret-right text-muted mr-sm"
                     key={uniqueId('breadcrumb-')}
                   />,
-                  <span className="text-small text-muted" key={uniqueId('breadcrumb-')}>
+                  <span
+                    className="text-small text-muted"
+                    key={uniqueId('breadcrumb-')}
+                    data-test="bc-item"
+                  >
                     {startCase(u)}
                   </span>
                 ]
@@ -50,6 +58,7 @@ class Breadcrumb extends Component<Props> {
                   to={breadcrumbUrl}
                   className="text-small mr-sm"
                   key={uniqueId('breadcrumb-')}
+                  data-test="bc-item"
                 >
                   {startCase(u)}
                 </Link>
