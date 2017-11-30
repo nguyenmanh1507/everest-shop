@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Divider render properly 1`] = `
+<div
+  className="divider"
+/>
+`;
+
+exports[`Divider render type dark 1`] = `
+<div
+  className="divider-dark"
+/>
+`;
+
+exports[`Divider render type dot 1`] = `
+<div
+  className="divider-dot"
+/>
+`;
+
+exports[`Divider with extra class 1`] = `
+<div
+  className="divider-dot my-md"
+/>
+`;

@@ -1,0 +1,588 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ColorsList render list of checkbox 1`] = `
+<div>
+  <label
+    className="brick brick--red mr-xs"
+  >
+    <input
+      data-test="color-input"
+      name="select-single-test"
+      onChange={[Function]}
+      type="checkbox"
+    />
+    <span
+      className="brick__body"
+    />
+  </label>
+  <label
+    className="brick brick--pink mr-xs"
+  >
+    <input
+      data-test="color-input"
+      name="select-single-test"
+      onChange={[Function]}
+      type="checkbox"
+    />
+    <span
+      className="brick__body"
+    />
+  </label>
+  <label
+    className="brick brick--purple mr-xs"
+  >
+    <input
+      data-test="color-input"
+      name="select-single-test"
+      onChange={[Function]}
+      type="checkbox"
+    />
+    <span
+      className="brick__body"
+    />
+  </label>
+  <label
+    className="brick brick--deep-blue mr-xs"
+  >
+    <input
+      data-test="color-input"
+      name="select-single-test"
+      onChange={[Function]}
+      type="checkbox"
+    />
+    <span
+      className="brick__body"
+    />
+  </label>
+  <label
+    className="brick brick--indigo mr-xs"
+  >
+    <input
+      data-test="color-input"
+      name="select-single-test"
+      onChange={[Function]}
+      type="checkbox"
+    />
+    <span
+      className="brick__body"
+    />
+  </label>
+  <label
+    className="brick brick--blue mr-xs"
+  >
+    <input
+      data-test="color-input"
+      name="select-single-test"
+      onChange={[Function]}
+      type="checkbox"
+    />
+    <span
+      className="brick__body"
+    />
+  </label>
+  <label
+    className="brick brick--light-blue mr-xs"
+  >
+    <input
+      data-test="color-input"
+      name="select-single-test"
+      onChange={[Function]}
+      type="checkbox"
+    />
+    <span
+      className="brick__body"
+    />
+  </label>
+  <label
+    className="brick brick--cyan mr-xs"
+  >
+    <input
+      data-test="color-input"
+      name="select-single-test"
+      onChange={[Function]}
+      type="checkbox"
+    />
+    <span
+      className="brick__body"
+    />
+  </label>
+  <label
+    className="brick brick--teal mr-xs"
+  >
+    <input
+      data-test="color-input"
+      name="select-single-test"
+      onChange={[Function]}
+      type="checkbox"
+    />
+    <span
+      className="brick__body"
+    />
+  </label>
+  <label
+    className="brick brick--green mr-xs"
+  >
+    <input
+      data-test="color-input"
+      name="select-single-test"
+      onChange={[Function]}
+      type="checkbox"
+    />
+    <span
+      className="brick__body"
+    />
+  </label>
+  <label
+    className="brick brick--light-green mr-xs"
+  >
+    <input
+      data-test="color-input"
+      name="select-single-test"
+      onChange={[Function]}
+      type="checkbox"
+    />
+    <span
+      className="brick__body"
+    />
+  </label>
+  <label
+    className="brick brick--lime mr-xs"
+  >
+    <input
+      data-test="color-input"
+      name="select-single-test"
+      onChange={[Function]}
+      type="checkbox"
+    />
+    <span
+      className="brick__body"
+    />
+  </label>
+  <label
+    className="brick brick--yellow mr-xs"
+  >
+    <input
+      data-test="color-input"
+      name="select-single-test"
+      onChange={[Function]}
+      type="checkbox"
+    />
+    <span
+      className="brick__body"
+    />
+  </label>
+  <label
+    className="brick brick--amber mr-xs"
+  >
+    <input
+      data-test="color-input"
+      name="select-single-test"
+      onChange={[Function]}
+      type="checkbox"
+    />
+    <span
+      className="brick__body"
+    />
+  </label>
+  <label
+    className="brick brick--orange mr-xs"
+  >
+    <input
+      data-test="color-input"
+      name="select-single-test"
+      onChange={[Function]}
+      type="checkbox"
+    />
+    <span
+      className="brick__body"
+    />
+  </label>
+  <label
+    className="brick brick--deep-orange mr-xs"
+  >
+    <input
+      data-test="color-input"
+      name="select-single-test"
+      onChange={[Function]}
+      type="checkbox"
+    />
+    <span
+      className="brick__body"
+    />
+  </label>
+  <label
+    className="brick brick--brow mr-xs"
+  >
+    <input
+      data-test="color-input"
+      name="select-single-test"
+      onChange={[Function]}
+      type="checkbox"
+    />
+    <span
+      className="brick__body"
+    />
+  </label>
+  <label
+    className="brick brick--grey mr-xs"
+  >
+    <input
+      data-test="color-input"
+      name="select-single-test"
+      onChange={[Function]}
+      type="checkbox"
+    />
+    <span
+      className="brick__body"
+    />
+  </label>
+  <label
+    className="brick brick--blue-grey mr-xs"
+  >
+    <input
+      data-test="color-input"
+      name="select-single-test"
+      onChange={[Function]}
+      type="checkbox"
+    />
+    <span
+      className="brick__body"
+    />
+  </label>
+  <label
+    className="brick brick--black mr-xs"
+  >
+    <input
+      data-test="color-input"
+      name="select-single-test"
+      onChange={[Function]}
+      type="checkbox"
+    />
+    <span
+      className="brick__body"
+    />
+  </label>
+</div>
+`;
+
+exports[`ColorsList render list of choice colors 1`] = `
+<div>
+  <label
+    className="brick brick--teal mr-xs"
+  >
+    <input
+      data-test="color-input"
+      name="select-single-test"
+      onChange={[Function]}
+      type="radio"
+    />
+    <span
+      className="brick__body"
+    />
+  </label>
+  <label
+    className="brick brick--indigo mr-xs"
+  >
+    <input
+      data-test="color-input"
+      name="select-single-test"
+      onChange={[Function]}
+      type="radio"
+    />
+    <span
+      className="brick__body"
+    />
+  </label>
+  <label
+    className="brick brick--green mr-xs"
+  >
+    <input
+      data-test="color-input"
+      name="select-single-test"
+      onChange={[Function]}
+      type="radio"
+    />
+    <span
+      className="brick__body"
+    />
+  </label>
+  <label
+    className="brick brick--deep-orange mr-xs"
+  >
+    <input
+      data-test="color-input"
+      name="select-single-test"
+      onChange={[Function]}
+      type="radio"
+    />
+    <span
+      className="brick__body"
+    />
+  </label>
+</div>
+`;
+
+exports[`ColorsList render properly 1`] = `
+<div>
+  <label
+    className="brick brick--red mr-xs"
+  >
+    <input
+      data-test="color-input"
+      name="select-single-test"
+      onChange={[Function]}
+      type="radio"
+    />
+    <span
+      className="brick__body"
+    />
+  </label>
+  <label
+    className="brick brick--pink mr-xs"
+  >
+    <input
+      data-test="color-input"
+      name="select-single-test"
+      onChange={[Function]}
+      type="radio"
+    />
+    <span
+      className="brick__body"
+    />
+  </label>
+  <label
+    className="brick brick--purple mr-xs"
+  >
+    <input
+      data-test="color-input"
+      name="select-single-test"
+      onChange={[Function]}
+      type="radio"
+    />
+    <span
+      className="brick__body"
+    />
+  </label>
+  <label
+    className="brick brick--deep-blue mr-xs"
+  >
+    <input
+      data-test="color-input"
+      name="select-single-test"
+      onChange={[Function]}
+      type="radio"
+    />
+    <span
+      className="brick__body"
+    />
+  </label>
+  <label
+    className="brick brick--indigo mr-xs"
+  >
+    <input
+      data-test="color-input"
+      name="select-single-test"
+      onChange={[Function]}
+      type="radio"
+    />
+    <span
+      className="brick__body"
+    />
+  </label>
+  <label
+    className="brick brick--blue mr-xs"
+  >
+    <input
+      data-test="color-input"
+      name="select-single-test"
+      onChange={[Function]}
+      type="radio"
+    />
+    <span
+      className="brick__body"
+    />
+  </label>
+  <label
+    className="brick brick--light-blue mr-xs"
+  >
+    <input
+      data-test="color-input"
+      name="select-single-test"
+      onChange={[Function]}
+      type="radio"
+    />
+    <span
+      className="brick__body"
+    />
+  </label>
+  <label
+    className="brick brick--cyan mr-xs"
+  >
+    <input
+      data-test="color-input"
+      name="select-single-test"
+      onChange={[Function]}
+      type="radio"
+    />
+    <span
+      className="brick__body"
+    />
+  </label>
+  <label
+    className="brick brick--teal mr-xs"
+  >
+    <input
+      data-test="color-input"
+      name="select-single-test"
+      onChange={[Function]}
+      type="radio"
+    />
+    <span
+      className="brick__body"
+    />
+  </label>
+  <label
+    className="brick brick--green mr-xs"
+  >
+    <input
+      data-test="color-input"
+      name="select-single-test"
+      onChange={[Function]}
+      type="radio"
+    />
+    <span
+      className="brick__body"
+    />
+  </label>
+  <label
+    className="brick brick--light-green mr-xs"
+  >
+    <input
+      data-test="color-input"
+      name="select-single-test"
+      onChange={[Function]}
+      type="radio"
+    />
+    <span
+      className="brick__body"
+    />
+  </label>
+  <label
+    className="brick brick--lime mr-xs"
+  >
+    <input
+      data-test="color-input"
+      name="select-single-test"
+      onChange={[Function]}
+      type="radio"
+    />
+    <span
+      className="brick__body"
+    />
+  </label>
+  <label
+    className="brick brick--yellow mr-xs"
+  >
+    <input
+      data-test="color-input"
+      name="select-single-test"
+      onChange={[Function]}
+      type="radio"
+    />
+    <span
+      className="brick__body"
+    />
+  </label>
+  <label
+    className="brick brick--amber mr-xs"
+  >
+    <input
+      data-test="color-input"
+      name="select-single-test"
+      onChange={[Function]}
+      type="radio"
+    />
+    <span
+      className="brick__body"
+    />
+  </label>
+  <label
+    className="brick brick--orange mr-xs"
+  >
+    <input
+      data-test="color-input"
+      name="select-single-test"
+      onChange={[Function]}
+      type="radio"
+    />
+    <span
+      className="brick__body"
+    />
+  </label>
+  <label
+    className="brick brick--deep-orange mr-xs"
+  >
+    <input
+      data-test="color-input"
+      name="select-single-test"
+      onChange={[Function]}
+      type="radio"
+    />
+    <span
+      className="brick__body"
+    />
+  </label>
+  <label
+    className="brick brick--brow mr-xs"
+  >
+    <input
+      data-test="color-input"
+      name="select-single-test"
+      onChange={[Function]}
+      type="radio"
+    />
+    <span
+      className="brick__body"
+    />
+  </label>
+  <label
+    className="brick brick--grey mr-xs"
+  >
+    <input
+      data-test="color-input"
+      name="select-single-test"
+      onChange={[Function]}
+      type="radio"
+    />
+    <span
+      className="brick__body"
+    />
+  </label>
+  <label
+    className="brick brick--blue-grey mr-xs"
+  >
+    <input
+      data-test="color-input"
+      name="select-single-test"
+      onChange={[Function]}
+      type="radio"
+    />
+    <span
+      className="brick__body"
+    />
+  </label>
+  <label
+    className="brick brick--black mr-xs"
+  >
+    <input
+      data-test="color-input"
+      name="select-single-test"
+      onChange={[Function]}
+      type="radio"
+    />
+    <span
+      className="brick__body"
+    />
+  </label>
+</div>
+`;

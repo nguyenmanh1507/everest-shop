@@ -6,6 +6,7 @@ import uniqueId from 'lodash/uniqueId'
 import HeadingGlint from 'Components/HeadingGlint'
 import CardOmega from 'Components/CardOmega'
 import ListBugles from 'Components/ListBugles'
+import ColorsList from 'Components/ColorsList'
 
 const data = [
   {
@@ -30,7 +31,7 @@ const data = [
   }
 ]
 
-class CategoriesSidebar extends Component<{}> {
+class CategoriesPageSidebar extends Component<{}> {
   render() {
     return (
       <div>
@@ -43,6 +44,11 @@ class CategoriesSidebar extends Component<{}> {
 
         <div className="mb-lg">
           <form action="/">
+            <ColorsList
+              selectMulti
+              handleColorSelect={() => {}}
+              name="categories-colors"
+            />
             <div className="mt-md">
               <button className="btn btn--link" type="reset">
                 Clear all
@@ -85,4 +91,4 @@ class CategoriesSidebar extends Component<{}> {
   }
 }
 
-export default CategoriesSidebar
+export default CategoriesPageSidebar
