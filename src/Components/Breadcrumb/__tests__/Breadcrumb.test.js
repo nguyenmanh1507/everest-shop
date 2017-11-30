@@ -13,7 +13,6 @@ configure({ adapter: new Adapter() })
 
 test('Breadcrumb render properly', () => {
   const match = { url: '/women/clothing/jeans' }
-  const context = {}
 
   const component = renderer.create(renderBreadcrumb(match))
 
@@ -23,7 +22,6 @@ test('Breadcrumb render properly', () => {
 
 describe('<Breadcrumb />', () => {
   const match = { url: '/women/clothing/jeans' }
-  const context = {}
   const wrapper = render(renderBreadcrumb(match))
 
   test("Always render homepage's link", () => {
