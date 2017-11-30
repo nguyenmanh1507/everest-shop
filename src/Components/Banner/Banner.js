@@ -1,6 +1,7 @@
 // @flow
 
 import React, { PureComponent } from 'react'
+import cx from 'classnames'
 
 type Props = {
   /** Component background image */
@@ -8,16 +9,20 @@ type Props = {
   /** Component title */
   title: string,
   /** Component sub title */
-  subTitle: string
+  subTitle: string,
+  /** Extra class */
+  exClass?: string
 }
 
 class Banner extends PureComponent<Props> {
   render() {
-    const { bgImage, title, subTitle } = this.props
+    const { bgImage, title, subTitle, exClass } = this.props
 
     return (
       <section
-        className="banner"
+        className={cx('banner', {
+          [exClass || '']: exClass && exClass.length
+        })}
         style={{ backgroundImage: `url(${bgImage})` }}
       >
         <div className="banner__body">

@@ -15,6 +15,20 @@ test('Banner render properly', () => {
     />
   )
 
-  const tree = component.toJSON()
+  let tree = component.toJSON()
+  expect(tree).toMatchSnapshot()
+})
+
+test('Banner with extra class', () => {
+  const component = renderer.create(
+    <Banner
+      title="Flowe desk"
+      subTitle="Inspiration"
+      bgImage="https://unsplash.it/800/450?image=230"
+      exClass="mb-md"
+    />
+  )
+
+  let tree = component.toJSON()
   expect(tree).toMatchSnapshot()
 })

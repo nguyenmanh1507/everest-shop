@@ -25,3 +25,29 @@ exports[`Banner render properly 1`] = `
   </div>
 </section>
 `;
+
+exports[`Banner with extra class 1`] = `
+<section
+  className="banner mb-md"
+  style={
+    Object {
+      "backgroundImage": "url(https://unsplash.it/800/450?image=230)",
+    }
+  }
+>
+  <div
+    className="banner__body"
+  >
+    <h3
+      className="banner__sub-title"
+    >
+      Inspiration
+    </h3>
+    <h2
+      className="banner__title"
+    >
+      Flowe desk
+    </h2>
+  </div>
+</section>
+`;
