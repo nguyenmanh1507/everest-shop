@@ -6,6 +6,7 @@ import uniqueId from 'lodash/uniqueId'
 import RouteWithSubRoutes from './RouteWithSubRoutes'
 import HomePage from 'Pages/HomePage'
 import CategoriesPage from 'Pages/CategoriesPage'
+import ProductDetailPage from 'Pages/ProductDetailPage'
 
 const routes = [
   {
@@ -31,6 +32,10 @@ const routes = [
   {
     path: '/men',
     component: CategoriesPage
+  },
+  {
+    path: '/products/:productSlug',
+    component: ProductDetailPage
   },
   {
     path: '/about',

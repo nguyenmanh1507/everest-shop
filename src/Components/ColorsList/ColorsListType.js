@@ -24,7 +24,7 @@ type ColorSuit =
 
 export type ColorsListType = {
   /** Function handle value on change */
-  handleColorSelect: () => void,
+  handleColorSelect: (e: SyntheticInputEvent<HTMLInputElement>) => void,
   /** Group name for colors */
   name: string,
   /** Choose multi color or not */
@@ -37,7 +37,7 @@ export type ColorType = {
   /** Color name */
   color: string,
   /** Function handle value on change */
-  handleColorSelect: () => void,
+  handleColorSelect: (e: SyntheticInputEvent<HTMLInputElement>) => void,
   /** Group name for colors */
   name: string,
   /** Choose multi color or not */

@@ -2,7 +2,6 @@
 
 import React from 'react'
 import renderer from 'react-test-renderer'
-import { render } from 'enzyme'
 
 import Banner from '../Banner'
 

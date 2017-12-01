@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HeadingChink render properly 1`] = `
+<h2
+  className="text-uppercase text-large mb-0"
+>
+  related products
+</h2>
+`;
+
+exports[`HeadingChink with extra class 1`] = `
+<h2
+  className="text-uppercase text-large mb-lg"
+>
+  related products
+</h2>
+`;

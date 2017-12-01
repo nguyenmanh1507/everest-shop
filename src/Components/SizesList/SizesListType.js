@@ -4,7 +4,7 @@ type SizeSuit = 'XS' | 'S' | 'M' | 'L' | 'XL' | 'XXL'
 
 export type SizesListType = {
   /** Function handle value on change */
-  handleSizeSelect: () => void,
+  handleSizeSelect: (e: SyntheticInputEvent<HTMLInputElement>) => void,
   /** Group name for sizes */
   name: string,
   /** Choose multi size or not */
@@ -17,7 +17,7 @@ export type SizeType = {
   /** Size name */
   size: string,
   /** Function handle value on change */
-  handleSizeSelect: () => void,
+  handleSizeSelect: (e: SyntheticInputEvent<HTMLInputElement>) => void,
   /** Group name for sizes */
   name: string,
   /** Choose multi size or not */

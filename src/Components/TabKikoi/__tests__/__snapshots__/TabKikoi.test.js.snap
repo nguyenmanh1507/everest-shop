@@ -1,0 +1,64 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TabKikoi render properly 1`] = `
+<div
+  className="tab"
+>
+  <div
+    className="tab__nav tab__nav--center"
+  >
+    <button
+      className="tab__nav-item active"
+      data-item={1}
+      data-test="tab-item-1"
+      onClick={[Function]}
+    >
+      Description
+    </button>
+    <button
+      className="tab__nav-item"
+      data-item={2}
+      data-test="tab-item-2"
+      onClick={[Function]}
+    >
+      Reviews
+    </button>
+    <button
+      className="tab__nav-item"
+      data-item={3}
+      data-test="tab-item-3"
+      onClick={[Function]}
+    >
+      FAQ
+    </button>
+  </div>
+  <div
+    className="tab__body"
+  >
+    <div
+      className="tab__content active"
+      data-test="tab-content-1"
+    >
+      <div>
+        Description content go here
+      </div>
+    </div>
+    <div
+      className="tab__content"
+      data-test="tab-content-2"
+    >
+      <div>
+        Reviews content go here
+      </div>
+    </div>
+    <div
+      className="tab__content"
+      data-test="tab-content-3"
+    >
+      <div>
+        FAQ content go here
+      </div>
+    </div>
+  </div>
+</div>
+`;
