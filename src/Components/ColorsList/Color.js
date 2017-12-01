@@ -15,6 +15,7 @@ class Color extends PureComponent<ColorType> {
           type={selectMulti ? 'checkbox' : 'radio'}
           name={name}
           onChange={handleColorSelect}
+          value={`${name}:${color}`}
           {...rest}
         />
         <span className="brick__body" />

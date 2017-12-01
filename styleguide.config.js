@@ -6,7 +6,8 @@ module.exports = {
     '**/Components/Header/**/*.js',
     '**/Components/Footer/**/*.js',
     '**/Components/Navigation/**/*.js',
-    '**/Components/ColorsList/Color.js'
+    '**/Components/ColorsList/Color.js',
+    '**/Components/SizesList/Size.js'
   ],
   template: './src/rsg-templates/index.html'
 }

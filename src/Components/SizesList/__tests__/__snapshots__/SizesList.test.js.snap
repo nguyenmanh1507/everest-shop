@@ -1,0 +1,256 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SizesList render list of checkbox 1`] = `
+<div>
+  <label
+    className="brick-2 mr-xs"
+  >
+    <input
+      data-test="size-input"
+      name="select-single-test"
+      onChange={[Function]}
+      type="checkbox"
+      value="select-single-test:XS"
+    />
+    <span
+      className="brick-2__body"
+    >
+      XS
+    </span>
+  </label>
+  <label
+    className="brick-2 mr-xs"
+  >
+    <input
+      data-test="size-input"
+      name="select-single-test"
+      onChange={[Function]}
+      type="checkbox"
+      value="select-single-test:S"
+    />
+    <span
+      className="brick-2__body"
+    >
+      S
+    </span>
+  </label>
+  <label
+    className="brick-2 mr-xs"
+  >
+    <input
+      data-test="size-input"
+      name="select-single-test"
+      onChange={[Function]}
+      type="checkbox"
+      value="select-single-test:M"
+    />
+    <span
+      className="brick-2__body"
+    >
+      M
+    </span>
+  </label>
+  <label
+    className="brick-2 mr-xs"
+  >
+    <input
+      data-test="size-input"
+      name="select-single-test"
+      onChange={[Function]}
+      type="checkbox"
+      value="select-single-test:L"
+    />
+    <span
+      className="brick-2__body"
+    >
+      L
+    </span>
+  </label>
+  <label
+    className="brick-2 mr-xs"
+  >
+    <input
+      data-test="size-input"
+      name="select-single-test"
+      onChange={[Function]}
+      type="checkbox"
+      value="select-single-test:XL"
+    />
+    <span
+      className="brick-2__body"
+    >
+      XL
+    </span>
+  </label>
+  <label
+    className="brick-2 mr-xs"
+  >
+    <input
+      data-test="size-input"
+      name="select-single-test"
+      onChange={[Function]}
+      type="checkbox"
+      value="select-single-test:XXL"
+    />
+    <span
+      className="brick-2__body"
+    >
+      XXL
+    </span>
+  </label>
+</div>
+`;
+
+exports[`SizesList render list of choice sizes 1`] = `
+<div>
+  <label
+    className="brick-2 mr-xs"
+  >
+    <input
+      data-test="size-input"
+      name="select-single-test"
+      onChange={[Function]}
+      type="radio"
+      value="select-single-test:S"
+    />
+    <span
+      className="brick-2__body"
+    >
+      S
+    </span>
+  </label>
+  <label
+    className="brick-2 mr-xs"
+  >
+    <input
+      data-test="size-input"
+      name="select-single-test"
+      onChange={[Function]}
+      type="radio"
+      value="select-single-test:M"
+    />
+    <span
+      className="brick-2__body"
+    >
+      M
+    </span>
+  </label>
+  <label
+    className="brick-2 mr-xs"
+  >
+    <input
+      data-test="size-input"
+      name="select-single-test"
+      onChange={[Function]}
+      type="radio"
+      value="select-single-test:L"
+    />
+    <span
+      className="brick-2__body"
+    >
+      L
+    </span>
+  </label>
+</div>
+`;
+
+exports[`SizesList render properly 1`] = `
+<div>
+  <label
+    className="brick-2 mr-xs"
+  >
+    <input
+      data-test="size-input"
+      name="select-single-test"
+      onChange={[Function]}
+      type="radio"
+      value="select-single-test:XS"
+    />
+    <span
+      className="brick-2__body"
+    >
+      XS
+    </span>
+  </label>
+  <label
+    className="brick-2 mr-xs"
+  >
+    <input
+      data-test="size-input"
+      name="select-single-test"
+      onChange={[Function]}
+      type="radio"
+      value="select-single-test:S"
+    />
+    <span
+      className="brick-2__body"
+    >
+      S
+    </span>
+  </label>
+  <label
+    className="brick-2 mr-xs"
+  >
+    <input
+      data-test="size-input"
+      name="select-single-test"
+      onChange={[Function]}
+      type="radio"
+      value="select-single-test:M"
+    />
+    <span
+      className="brick-2__body"
+    >
+      M
+    </span>
+  </label>
+  <label
+    className="brick-2 mr-xs"
+  >
+    <input
+      data-test="size-input"
+      name="select-single-test"
+      onChange={[Function]}
+      type="radio"
+      value="select-single-test:L"
+    />
+    <span
+      className="brick-2__body"
+    >
+      L
+    </span>
+  </label>
+  <label
+    className="brick-2 mr-xs"
+  >
+    <input
+      data-test="size-input"
+      name="select-single-test"
+      onChange={[Function]}
+      type="radio"
+      value="select-single-test:XL"
+    />
+    <span
+      className="brick-2__body"
+    >
+      XL
+    </span>
+  </label>
+  <label
+    className="brick-2 mr-xs"
+  >
+    <input
+      data-test="size-input"
+      name="select-single-test"
+      onChange={[Function]}
+      type="radio"
+      value="select-single-test:XXL"
+    />
+    <span
+      className="brick-2__body"
+    >
+      XXL
+    </span>
+  </label>
+</div>
+`;

@@ -10,6 +10,7 @@ exports[`ColorsList render list of checkbox 1`] = `
       name="select-single-test"
       onChange={[Function]}
       type="checkbox"
+      value="select-single-test:red"
     />
     <span
       className="brick__body"
@@ -23,6 +24,7 @@ exports[`ColorsList render list of checkbox 1`] = `
       name="select-single-test"
       onChange={[Function]}
       type="checkbox"
+      value="select-single-test:pink"
     />
     <span
       className="brick__body"
@@ -36,6 +38,7 @@ exports[`ColorsList render list of checkbox 1`] = `
       name="select-single-test"
       onChange={[Function]}
       type="checkbox"
+      value="select-single-test:purple"
     />
     <span
       className="brick__body"
@@ -49,6 +52,7 @@ exports[`ColorsList render list of checkbox 1`] = `
       name="select-single-test"
       onChange={[Function]}
       type="checkbox"
+      value="select-single-test:deep-blue"
     />
     <span
       className="brick__body"
@@ -62,6 +66,7 @@ exports[`ColorsList render list of checkbox 1`] = `
       name="select-single-test"
       onChange={[Function]}
       type="checkbox"
+      value="select-single-test:indigo"
     />
     <span
       className="brick__body"
@@ -75,6 +80,7 @@ exports[`ColorsList render list of checkbox 1`] = `
       name="select-single-test"
       onChange={[Function]}
       type="checkbox"
+      value="select-single-test:blue"
     />
     <span
       className="brick__body"
@@ -88,6 +94,7 @@ exports[`ColorsList render list of checkbox 1`] = `
       name="select-single-test"
       onChange={[Function]}
       type="checkbox"
+      value="select-single-test:light-blue"
     />
     <span
       className="brick__body"
@@ -101,6 +108,7 @@ exports[`ColorsList render list of checkbox 1`] = `
       name="select-single-test"
       onChange={[Function]}
       type="checkbox"
+      value="select-single-test:cyan"
     />
     <span
       className="brick__body"
@@ -114,6 +122,7 @@ exports[`ColorsList render list of checkbox 1`] = `
       name="select-single-test"
       onChange={[Function]}
       type="checkbox"
+      value="select-single-test:teal"
     />
     <span
       className="brick__body"
@@ -127,6 +136,7 @@ exports[`ColorsList render list of checkbox 1`] = `
       name="select-single-test"
       onChange={[Function]}
       type="checkbox"
+      value="select-single-test:green"
     />
     <span
       className="brick__body"
@@ -140,6 +150,7 @@ exports[`ColorsList render list of checkbox 1`] = `
       name="select-single-test"
       onChange={[Function]}
       type="checkbox"
+      value="select-single-test:light-green"
     />
     <span
       className="brick__body"
@@ -153,6 +164,7 @@ exports[`ColorsList render list of checkbox 1`] = `
       name="select-single-test"
       onChange={[Function]}
       type="checkbox"
+      value="select-single-test:lime"
     />
     <span
       className="brick__body"
@@ -166,6 +178,7 @@ exports[`ColorsList render list of checkbox 1`] = `
       name="select-single-test"
       onChange={[Function]}
       type="checkbox"
+      value="select-single-test:yellow"
     />
     <span
       className="brick__body"
@@ -179,6 +192,7 @@ exports[`ColorsList render list of checkbox 1`] = `
       name="select-single-test"
       onChange={[Function]}
       type="checkbox"
+      value="select-single-test:amber"
     />
     <span
       className="brick__body"
@@ -192,6 +206,7 @@ exports[`ColorsList render list of checkbox 1`] = `
       name="select-single-test"
       onChange={[Function]}
       type="checkbox"
+      value="select-single-test:orange"
     />
     <span
       className="brick__body"
@@ -205,6 +220,7 @@ exports[`ColorsList render list of checkbox 1`] = `
       name="select-single-test"
       onChange={[Function]}
       type="checkbox"
+      value="select-single-test:deep-orange"
     />
     <span
       className="brick__body"
@@ -218,6 +234,7 @@ exports[`ColorsList render list of checkbox 1`] = `
       name="select-single-test"
       onChange={[Function]}
       type="checkbox"
+      value="select-single-test:brow"
     />
     <span
       className="brick__body"
@@ -231,6 +248,7 @@ exports[`ColorsList render list of checkbox 1`] = `
       name="select-single-test"
       onChange={[Function]}
       type="checkbox"
+      value="select-single-test:grey"
     />
     <span
       className="brick__body"
@@ -244,6 +262,7 @@ exports[`ColorsList render list of checkbox 1`] = `
       name="select-single-test"
       onChange={[Function]}
       type="checkbox"
+      value="select-single-test:blue-grey"
     />
     <span
       className="brick__body"
@@ -257,6 +276,7 @@ exports[`ColorsList render list of checkbox 1`] = `
       name="select-single-test"
       onChange={[Function]}
       type="checkbox"
+      value="select-single-test:black"
     />
     <span
       className="brick__body"
@@ -275,6 +295,7 @@ exports[`ColorsList render list of choice colors 1`] = `
       name="select-single-test"
       onChange={[Function]}
       type="radio"
+      value="select-single-test:teal"
     />
     <span
       className="brick__body"
@@ -288,6 +309,7 @@ exports[`ColorsList render list of choice colors 1`] = `
       name="select-single-test"
       onChange={[Function]}
       type="radio"
+      value="select-single-test:indigo"
     />
     <span
       className="brick__body"
@@ -301,6 +323,7 @@ exports[`ColorsList render list of choice colors 1`] = `
       name="select-single-test"
       onChange={[Function]}
       type="radio"
+      value="select-single-test:green"
     />
     <span
       className="brick__body"
@@ -314,6 +337,7 @@ exports[`ColorsList render list of choice colors 1`] = `
       name="select-single-test"
       onChange={[Function]}
       type="radio"
+      value="select-single-test:deep-orange"
     />
     <span
       className="brick__body"
@@ -332,6 +356,7 @@ exports[`ColorsList render properly 1`] = `
       name="select-single-test"
       onChange={[Function]}
       type="radio"
+      value="select-single-test:red"
     />
     <span
       className="brick__body"
@@ -345,6 +370,7 @@ exports[`ColorsList render properly 1`] = `
       name="select-single-test"
       onChange={[Function]}
       type="radio"
+      value="select-single-test:pink"
     />
     <span
       className="brick__body"
@@ -358,6 +384,7 @@ exports[`ColorsList render properly 1`] = `
       name="select-single-test"
       onChange={[Function]}
       type="radio"
+      value="select-single-test:purple"
     />
     <span
       className="brick__body"
@@ -371,6 +398,7 @@ exports[`ColorsList render properly 1`] = `
       name="select-single-test"
       onChange={[Function]}
       type="radio"
+      value="select-single-test:deep-blue"
     />
     <span
       className="brick__body"
@@ -384,6 +412,7 @@ exports[`ColorsList render properly 1`] = `
       name="select-single-test"
       onChange={[Function]}
       type="radio"
+      value="select-single-test:indigo"
     />
     <span
       className="brick__body"
@@ -397,6 +426,7 @@ exports[`ColorsList render properly 1`] = `
       name="select-single-test"
       onChange={[Function]}
       type="radio"
+      value="select-single-test:blue"
     />
     <span
       className="brick__body"
@@ -410,6 +440,7 @@ exports[`ColorsList render properly 1`] = `
       name="select-single-test"
       onChange={[Function]}
       type="radio"
+      value="select-single-test:light-blue"
     />
     <span
       className="brick__body"
@@ -423,6 +454,7 @@ exports[`ColorsList render properly 1`] = `
       name="select-single-test"
       onChange={[Function]}
       type="radio"
+      value="select-single-test:cyan"
     />
     <span
       className="brick__body"
@@ -436,6 +468,7 @@ exports[`ColorsList render properly 1`] = `
       name="select-single-test"
       onChange={[Function]}
       type="radio"
+      value="select-single-test:teal"
     />
     <span
       className="brick__body"
@@ -449,6 +482,7 @@ exports[`ColorsList render properly 1`] = `
       name="select-single-test"
       onChange={[Function]}
       type="radio"
+      value="select-single-test:green"
     />
     <span
       className="brick__body"
@@ -462,6 +496,7 @@ exports[`ColorsList render properly 1`] = `
       name="select-single-test"
       onChange={[Function]}
       type="radio"
+      value="select-single-test:light-green"
     />
     <span
       className="brick__body"
@@ -475,6 +510,7 @@ exports[`ColorsList render properly 1`] = `
       name="select-single-test"
       onChange={[Function]}
       type="radio"
+      value="select-single-test:lime"
     />
     <span
       className="brick__body"
@@ -488,6 +524,7 @@ exports[`ColorsList render properly 1`] = `
       name="select-single-test"
       onChange={[Function]}
       type="radio"
+      value="select-single-test:yellow"
     />
     <span
       className="brick__body"
@@ -501,6 +538,7 @@ exports[`ColorsList render properly 1`] = `
       name="select-single-test"
       onChange={[Function]}
       type="radio"
+      value="select-single-test:amber"
     />
     <span
       className="brick__body"
@@ -514,6 +552,7 @@ exports[`ColorsList render properly 1`] = `
       name="select-single-test"
       onChange={[Function]}
       type="radio"
+      value="select-single-test:orange"
     />
     <span
       className="brick__body"
@@ -527,6 +566,7 @@ exports[`ColorsList render properly 1`] = `
       name="select-single-test"
       onChange={[Function]}
       type="radio"
+      value="select-single-test:deep-orange"
     />
     <span
       className="brick__body"
@@ -540,6 +580,7 @@ exports[`ColorsList render properly 1`] = `
       name="select-single-test"
       onChange={[Function]}
       type="radio"
+      value="select-single-test:brow"
     />
     <span
       className="brick__body"
@@ -553,6 +594,7 @@ exports[`ColorsList render properly 1`] = `
       name="select-single-test"
       onChange={[Function]}
       type="radio"
+      value="select-single-test:grey"
     />
     <span
       className="brick__body"
@@ -566,6 +608,7 @@ exports[`ColorsList render properly 1`] = `
       name="select-single-test"
       onChange={[Function]}
       type="radio"
+      value="select-single-test:blue-grey"
     />
     <span
       className="brick__body"
@@ -579,6 +622,7 @@ exports[`ColorsList render properly 1`] = `
       name="select-single-test"
       onChange={[Function]}
       type="radio"
+      value="select-single-test:black"
     />
     <span
       className="brick__body"
