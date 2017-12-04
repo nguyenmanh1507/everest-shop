@@ -105,6 +105,24 @@ const navItemsConfig: navItemsType = [
   {
     title: 'contact',
     path: '/contact'
+  },
+  {
+    title: 'Checkout',
+    path: '/checkout',
+    dropdown: [
+      {
+        title: 'Shopping Cart',
+        path: '/checkout/shopping-cart'
+      },
+      {
+        title: 'Payment',
+        path: '/checkout/payment'
+      },
+      {
+        title: 'Complete',
+        path: '/checkout/complete'
+      }
+    ]
   }
 ]
 

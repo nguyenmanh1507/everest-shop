@@ -81,7 +81,7 @@ class Header extends Component<{}> {
                   </div>
                 </div>
               </div>
-              <Link to="/" className="d-flex">
+              <Link to="/checkout" className="d-flex">
                 <i className="fa fa-shopping-bag fa-2x" />
                 <div className="ml-sm">
                   <div className="text-muted text-small">Your Cart (2)</div>

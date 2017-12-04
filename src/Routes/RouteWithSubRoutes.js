@@ -7,10 +7,10 @@ type RouteProps = {
   path: string,
   component: any,
   exact?: boolean,
-  routes?: {
+  routes?: Array<{
     path: string,
     component: any
-  }
+  }>
 }
 
 // wrap <Route> and use this everywhere instead, then when

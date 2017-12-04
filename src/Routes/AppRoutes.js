@@ -7,6 +7,12 @@ import RouteWithSubRoutes from './RouteWithSubRoutes'
 import HomePage from 'Pages/HomePage'
 import CategoriesPage from 'Pages/CategoriesPage'
 import ProductDetailPage from 'Pages/ProductDetailPage'
+import CheckoutPage from 'Pages/CheckoutPage'
+import CheckoutPageShoppingCart from 'Pages/CheckoutPage/CheckoutPageShoppingCart'
+import CheckoutPagePayment from 'Pages/CheckoutPage/CheckoutPagePayment'
+import CheckoutPageComplete from 'Pages/CheckoutPage/CheckoutPageComplete'
+import ContactPage from 'Pages/ContactPage'
+import AboutPage from 'Pages/AboutPage'
 
 const routes = [
   {
@@ -38,12 +44,30 @@ const routes = [
     component: ProductDetailPage
   },
   {
+    path: '/checkout',
+    component: CheckoutPage,
+    routes: [
+      {
+        path: '/checkout/shopping-cart',
+        component: CheckoutPageShoppingCart
+      },
+      {
+        path: '/checkout/payment',
+        component: CheckoutPagePayment
+      },
+      {
+        path: '/checkout/complete',
+        component: CheckoutPageComplete
+      }
+    ]
+  },
+  {
     path: '/about',
-    component: HomePage
+    component: AboutPage
   },
   {
     path: '/contact',
-    component: HomePage
+    component: ContactPage
   }
 ]
 

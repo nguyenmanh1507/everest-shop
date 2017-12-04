@@ -1,0 +1,229 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`StepIndicator render properly 1`] = `
+<div
+  className="step"
+>
+  <div
+    className="step__checkpoint done"
+    data-test="step-checkpoint"
+  >
+    <div
+      className="step__item"
+    >
+      01
+    </div>
+    <div
+      className="step__text"
+    >
+      Shopping Cart
+    </div>
+  </div>
+  <div
+    className="step__line"
+    data-test="step-line"
+  >
+    <div
+      className="step__line-icon"
+    >
+      <i
+        className="fa fa-caret-right"
+      />
+    </div>
+  </div>
+  <div
+    className="step__checkpoint"
+    data-test="step-checkpoint"
+  >
+    <div
+      className="step__item"
+    >
+      02
+    </div>
+    <div
+      className="step__text"
+    >
+      Payment
+    </div>
+  </div>
+  <div
+    className="step__line"
+    data-test="step-line"
+  >
+    <div
+      className="step__line-icon"
+    >
+      <i
+        className="fa fa-caret-right"
+      />
+    </div>
+  </div>
+  <div
+    className="step__checkpoint"
+    data-test="step-checkpoint"
+  >
+    <div
+      className="step__item"
+    >
+      03
+    </div>
+    <div
+      className="step__text"
+    >
+      Order Complete
+    </div>
+  </div>
+</div>
+`;
+
+exports[`StepIndicator render properly 2`] = `
+<div
+  className="step"
+>
+  <div
+    className="step__checkpoint done"
+    data-test="step-checkpoint"
+  >
+    <div
+      className="step__item"
+    >
+      01
+    </div>
+    <div
+      className="step__text"
+    >
+      Shopping Cart
+    </div>
+  </div>
+  <div
+    className="step__line"
+    data-test="step-line"
+  >
+    <div
+      className="step__line-icon"
+    >
+      <i
+        className="fa fa-caret-right"
+      />
+    </div>
+  </div>
+  <div
+    className="step__checkpoint done"
+    data-test="step-checkpoint"
+  >
+    <div
+      className="step__item"
+    >
+      02
+    </div>
+    <div
+      className="step__text"
+    >
+      Payment
+    </div>
+  </div>
+  <div
+    className="step__line"
+    data-test="step-line"
+  >
+    <div
+      className="step__line-icon"
+    >
+      <i
+        className="fa fa-caret-right"
+      />
+    </div>
+  </div>
+  <div
+    className="step__checkpoint"
+    data-test="step-checkpoint"
+  >
+    <div
+      className="step__item"
+    >
+      03
+    </div>
+    <div
+      className="step__text"
+    >
+      Order Complete
+    </div>
+  </div>
+</div>
+`;
+
+exports[`StepIndicator render properly 3`] = `
+<div
+  className="step"
+>
+  <div
+    className="step__checkpoint done"
+    data-test="step-checkpoint"
+  >
+    <div
+      className="step__item"
+    >
+      01
+    </div>
+    <div
+      className="step__text"
+    >
+      Shopping Cart
+    </div>
+  </div>
+  <div
+    className="step__line"
+    data-test="step-line"
+  >
+    <div
+      className="step__line-icon"
+    >
+      <i
+        className="fa fa-caret-right"
+      />
+    </div>
+  </div>
+  <div
+    className="step__checkpoint done"
+    data-test="step-checkpoint"
+  >
+    <div
+      className="step__item"
+    >
+      02
+    </div>
+    <div
+      className="step__text"
+    >
+      Payment
+    </div>
+  </div>
+  <div
+    className="step__line"
+    data-test="step-line"
+  >
+    <div
+      className="step__line-icon"
+    >
+      <i
+        className="fa fa-caret-right"
+      />
+    </div>
+  </div>
+  <div
+    className="step__checkpoint done"
+    data-test="step-checkpoint"
+  >
+    <div
+      className="step__item"
+    >
+      03
+    </div>
+    <div
+      className="step__text"
+    >
+      Order Complete
+    </div>
+  </div>
+</div>
+`;
