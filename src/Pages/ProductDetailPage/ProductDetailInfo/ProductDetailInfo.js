@@ -106,7 +106,7 @@ class ProductDetailInfo extends Component<{}> {
             <span className="text-bold">Categories</span>
           </div>
           <div className="medium-10 cell mb-xs">
-            <a href="#" className="text-muted">
+            <a href="/" className="text-muted">
               T-Shirt
             </a>
           </div>
@@ -114,13 +114,13 @@ class ProductDetailInfo extends Component<{}> {
             <span className="text-bold">Tags</span>
           </div>
           <div className="medium-10 cell">
-            <a href="#" className="text-muted">
+            <a href="/" className="text-muted">
               Underwear
             </a>,{' '}
-            <a href="#" className="text-muted">
+            <a href="/" className="text-muted">
               Cotton
             </a>,{' '}
-            <a href="#" className="text-muted">
+            <a href="/" className="text-muted">
               Flyknit
             </a>
           </div>

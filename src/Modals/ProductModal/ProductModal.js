@@ -1,6 +1,6 @@
 // @flow
 
-import React, { Component, Fragment } from 'react'
+import React, { Component } from 'react'
 
 import Modal from 'Components/Modal'
 import ProductModalImages from './ProductModalImages'
@@ -8,7 +8,8 @@ import ProductModalInfo from './ProductModalInfo'
 import { GridX, Cell } from 'Components/Layouts'
 
 type Props = {
-  history: Object
+  history: Object,
+  match: Object
 }
 
 class ProductModal extends Component<Props> {
@@ -25,7 +26,7 @@ class ProductModal extends Component<Props> {
             <ProductModalImages />
           </Cell>
           <Cell span="large-6">
-            <ProductModalInfo {...this.props} />
+            <ProductModalInfo match={this.props.match} />
           </Cell>
         </GridX>
       </Modal>

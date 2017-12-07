@@ -1,10 +1,11 @@
 // @flow
 
 import React, { Component } from 'react'
-import { Switch } from 'react-router-dom'
-import uniqueId from 'lodash/uniqueId'
+import { Switch, Route } from 'react-router-dom'
 
-import RouteWithSubRoutes from './RouteWithSubRoutes'
+import CheckoutPageShoppingCart from 'Pages/CheckoutPage/CheckoutPageShoppingCart'
+import CheckoutPagePayment from 'Pages/CheckoutPage/CheckoutPagePayment'
+import CheckoutPageComplete from 'Pages/CheckoutPage/CheckoutPageComplete'
 
 type Props = {
   routes: Array<Object>
@@ -12,18 +13,14 @@ type Props = {
 
 class CheckoutPageRoutes extends Component<Props> {
   render() {
-    const { routes } = this.props
-
-    console.log(routes)
-
     return (
       <Switch>
-        {routes.map(route => (
-          <RouteWithSubRoutes
-            key={uniqueId('checkout-page-routes-')}
-            {...route}
-          />
-        ))}
+        <Route
+          path="/checkout/shopping-cart"
+          component={CheckoutPageShoppingCart}
+        />
+        <Route path="/checkout/payment" component={CheckoutPagePayment} />
+        <Route path="/checkout/complete" component={CheckoutPageComplete} />
       </Switch>
     )
   }

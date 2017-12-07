@@ -71,33 +71,33 @@ const navItemsConfig: navItemsType = [
       }
     ]
   },
-  {
-    title: 'Men',
-    path: '/men',
-    megaMenu: [
-      {
-        title: 'Clothing',
-        items: [
-          {
-            title: 'Shirts',
-            path: '/men/clothing/shirts'
-          },
-          {
-            title: 'Sweaters',
-            path: '/men/clothing/sweaters'
-          },
-          {
-            title: 'Pants',
-            path: '/men/clothing/pants'
-          },
-          {
-            title: 'Jeans',
-            path: '/men/clothing/jeans'
-          }
-        ]
-      }
-    ]
-  },
+  // {
+  //   title: 'Men',
+  //   path: '/men',
+  //   megaMenu: [
+  //     {
+  //       title: 'Clothing',
+  //       items: [
+  //         {
+  //           title: 'Shirts',
+  //           path: '/men/clothing/shirts'
+  //         },
+  //         {
+  //           title: 'Sweaters',
+  //           path: '/men/clothing/sweaters'
+  //         },
+  //         {
+  //           title: 'Pants',
+  //           path: '/men/clothing/pants'
+  //         },
+  //         {
+  //           title: 'Jeans',
+  //           path: '/men/clothing/jeans'
+  //         }
+  //       ]
+  //     }
+  //   ]
+  // },
   {
     title: 'about',
     path: '/about'

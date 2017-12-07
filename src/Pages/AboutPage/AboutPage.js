@@ -79,7 +79,7 @@ class AboutPage extends Component<{}> {
               <img
                 src="https://unsplash.it/300/400?image=1003"
                 className="card-3__thumbnail"
-                alt="Image"
+                alt="John Doe"
               />
               <figcaption className="card-3__content">
                 <div className="card-3__title">Eva D. Dortch</div>
@@ -92,7 +92,7 @@ class AboutPage extends Component<{}> {
               <img
                 src="https://unsplash.it/300/400?image=1002"
                 className="card-3__thumbnail"
-                alt="Image"
+                alt="John Doe"
               />
               <figcaption className="card-3__content">
                 <div className="card-3__title">Eva D. Dortch</div>
@@ -105,7 +105,7 @@ class AboutPage extends Component<{}> {
               <img
                 src="https://unsplash.it/300/400?image=1001"
                 className="card-3__thumbnail"
-                alt="Image"
+                alt="John Doe"
               />
               <figcaption className="card-3__content">
                 <div className="card-3__title">Eva D. Dortch</div>
@@ -118,7 +118,7 @@ class AboutPage extends Component<{}> {
               <img
                 src="https://unsplash.it/300/400?image=1000"
                 className="card-3__thumbnail"
-                alt="Image"
+                alt="John Doe"
               />
               <figcaption className="card-3__content">
                 <div className="card-3__title">Eva D. Dortch</div>

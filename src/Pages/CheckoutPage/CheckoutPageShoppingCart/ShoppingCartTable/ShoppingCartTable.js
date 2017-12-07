@@ -24,7 +24,7 @@ class ShoppingCartTable extends Component<{}> {
               {[1, 2, 3].map(item => (
                 <tr key={`shopping-cart-table-row-${item}`}>
                   <th scope="row">
-                    <img src="https://unsplash.it/90/120?random" alt="image" />
+                    <img src="https://unsplash.it/90/120?random" alt="product" />
                   </th>
                   <td>
                     <div className="mb-sm">Unisex Slimpit Vest Men</div>
