@@ -22,6 +22,7 @@ class CategoriesPageProductList extends Component<{}> {
               imgSrc={`https://unsplash.it/270/360?image=90${index}`}
               title="T-Shirt Stripes Unique"
               url="/products/t-shirt-stripes-unique-zacfa31dse"
+              previewUrl="/preview/t-shirt-stripes-unique-zacfa31dse"
               catName="Coat"
               catUrl="/"
               price="$299"

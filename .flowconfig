@@ -11,3 +11,4 @@
 module.name_mapper='^Components\(.*\)$' -> '<PROJECT_ROOT>/src/Components/\1'
 module.name_mapper='^Pages\(.*\)$' -> '<PROJECT_ROOT>/src/Pages/\1'
 module.name_mapper='^Routes\(.*\)$' -> '<PROJECT_ROOT>/src/Routes/\1'
+module.name_mapper='^Modals\(.*\)$' -> '<PROJECT_ROOT>/src/Modals/\1'

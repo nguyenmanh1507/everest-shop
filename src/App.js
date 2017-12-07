@@ -1,7 +1,7 @@
 // @flow
 
 import React, { Component } from 'react'
-import { BrowserRouter as Router } from 'react-router-dom'
+import { BrowserRouter as Router, Route } from 'react-router-dom'
 import { Provider } from 'react-redux'
 import store from './Redux'
 import Header from './Components/Header'
@@ -16,7 +16,7 @@ class App extends Component<{}> {
         <Router>
           <div>
             <Header />
-            <AppRoutes />
+            <Route component={AppRoutes} />
             <Footer />
           </div>
         </Router>

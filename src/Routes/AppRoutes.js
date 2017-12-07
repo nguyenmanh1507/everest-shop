@@ -1,8 +1,9 @@
 // @flow
 
-import React, { Component } from 'react'
-import { Switch } from 'react-router-dom'
+import React, { Component, Fragment } from 'react'
+import { Switch, Route } from 'react-router-dom'
 import uniqueId from 'lodash/uniqueId'
+
 import RouteWithSubRoutes from './RouteWithSubRoutes'
 import HomePage from 'Pages/HomePage'
 import CategoriesPage from 'Pages/CategoriesPage'
@@ -13,6 +14,7 @@ import CheckoutPagePayment from 'Pages/CheckoutPage/CheckoutPagePayment'
 import CheckoutPageComplete from 'Pages/CheckoutPage/CheckoutPageComplete'
 import ContactPage from 'Pages/ContactPage'
 import AboutPage from 'Pages/AboutPage'
+import ProductModal from 'Modals/ProductModal'
 
 const routes = [
   {
@@ -44,6 +46,10 @@ const routes = [
     component: ProductDetailPage
   },
   {
+    path: '/preview/:productSlug',
+    component: ProductDetailPage
+  },
+  {
     path: '/checkout',
     component: CheckoutPage,
     routes: [
@@ -71,14 +77,53 @@ const routes = [
   }
 ]
 
-class AppRoutes extends Component<{}> {
+type Props = {
+  location: Object
+}
+
+class AppRoutes extends Component<Props> {
+  // Modal example: https://reacttraining.com/react-router/web/example/modal-gallery
+  previousLocation = this.props.location
+
+  componentWillUpdate(nextProps: Object) {
+    const { location } = this.props
+    // set previousLocation if props.location is not modal
+    if (
+      nextProps.history.action !== 'POP' &&
+      (!location.state || !location.state.modal)
+    ) {
+      this.previousLocation = this.props.location
+    }
+  }
+
   render() {
+    const { location } = this.props
+    const isModal = !!(
+      location.state &&
+      location.state.modal &&
+      this.previousLocation !== location
+    )
+
     return (
-      <Switch>
-        {routes.map(route => (
-          <RouteWithSubRoutes key={uniqueId('app-routes-')} {...route} />
-        ))}
-      </Switch>
+      <Fragment>
+        <Switch location={isModal ? this.previousLocation : location}>
+          {/* Don't know why modal not work if use <RouteWithSubRoutes key={uniqueId('app-routes-')} {...route} /> instead */}
+          {routes.map(route => (
+            <Route
+              key={uniqueId('app-routes-')}
+              path={route.path}
+              exact={route.exact || false}
+              render={props => (
+                // pass the sub-routes down to keep nesting
+                <route.component {...props} routes={route.routes || []} />
+              )}
+            />
+          ))}
+        </Switch>
+        {isModal ? (
+          <Route path="/preview/:productSlug" component={ProductModal} />
+        ) : null}
+      </Fragment>
     )
   }
 }

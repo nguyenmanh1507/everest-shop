@@ -13,44 +13,18 @@ class HomePageNewArrivals extends Component<{}> {
           <HeadingClods title="New Arrivals" />
         </Cell>
         <Cell span="small-3">
-          <CardSeel
-            imgSrc="https://unsplash.it/270/360"
-            title="T-Shirt Stripes Unique"
-            url="/"
-            catName="Coat"
-            catUrl="/"
-            price="$299"
-          />
-        </Cell>
-        <Cell span="small-3">
-          <CardSeel
-            imgSrc="https://unsplash.it/270/360"
-            title="T-Shirt Stripes Unique"
-            url="/"
-            catName="Coat"
-            catUrl="/"
-            price="$299"
-          />
-        </Cell>
-        <Cell span="small-3">
-          <CardSeel
-            imgSrc="https://unsplash.it/270/360"
-            title="T-Shirt Stripes Unique"
-            url="/"
-            catName="Coat"
-            catUrl="/"
-            price="$299"
-          />
-        </Cell>
-        <Cell span="small-3">
-          <CardSeel
-            imgSrc="https://unsplash.it/270/360"
-            title="T-Shirt Stripes Unique"
-            url="/"
-            catName="Coat"
-            catUrl="/"
-            price="$299"
-          />
+          {[1, 2, 3, 4].map(item => (
+            <CardSeel
+              key={`home-page-new-arrivals-${item}`}
+              imgSrc="https://unsplash.it/270/360"
+              title="T-Shirt Stripes Unique"
+              url="/"
+              previewUrl="/"
+              catName="Coat"
+              catUrl="/"
+              price="$299"
+            />
+          ))}
         </Cell>
       </GridX>
     )

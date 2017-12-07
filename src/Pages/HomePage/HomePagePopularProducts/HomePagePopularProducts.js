@@ -19,6 +19,7 @@ class HomePagePopularProducts extends Component<{}> {
               imgSrc="https://unsplash.it/270/360"
               title="T-Shirt Stripes Unique"
               url="/"
+              previewUrl="/"
               catName="Coat"
               catUrl="/"
               price="$299"

@@ -15,6 +15,8 @@ type Props = {
   title: string,
   /** Card link href */
   url: string,
+  /** Card preview link */
+  previewUrl: string,
   /** Card category's link href */
   catUrl: string,
   /** Category name */
@@ -25,11 +27,22 @@ type Props = {
 
 class CardSeel extends Component<Props> {
   render() {
-    const { imgSrc, title, url, catUrl, catName, price } = this.props
+    const {
+      imgSrc,
+      title,
+      url,
+      previewUrl,
+      catUrl,
+      catName,
+      price
+    } = this.props
 
     return (
       <article className="card">
-        <Link to={url} className="card__thumbnail">
+        <Link
+          to={{ pathname: previewUrl, state: { modal: true } }}
+          className="card__thumbnail"
+        >
           <img src={imgSrc} alt={title} />
           <div className="card__thumbnail-addon">Quick View</div>
         </Link>

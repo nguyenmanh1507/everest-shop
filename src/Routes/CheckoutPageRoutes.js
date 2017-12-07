@@ -14,6 +14,8 @@ class CheckoutPageRoutes extends Component<Props> {
   render() {
     const { routes } = this.props
 
+    console.log(routes)
+
     return (
       <Switch>
         {routes.map(route => (
