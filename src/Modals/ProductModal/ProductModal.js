@@ -1,6 +1,11 @@
 // @flow
 
-import React, { Component } from 'react'
+import React, { Component, Fragment } from 'react'
+
+import Modal from 'Components/Modal'
+import ProductModalImages from './ProductModalImages'
+import ProductModalInfo from './ProductModalInfo'
+import { GridX, Cell } from 'Components/Layouts'
 
 type Props = {
   history: Object
@@ -14,35 +19,16 @@ class ProductModal extends Component<Props> {
 
   render() {
     return (
-      <div
-        onClick={this.back}
-        style={{
-          position: 'fixed',
-          top: 0,
-          left: 0,
-          bottom: 0,
-          right: 0,
-          background: 'rgba(0, 0, 0, 0.15)'
-        }}
-      >
-        <div
-          className="modal"
-          style={{
-            position: 'absolute',
-            background: '#fff',
-            top: 25,
-            left: '10%',
-            right: '10%',
-            padding: 15,
-            border: '2px solid #444'
-          }}
-        >
-          <h1>Product preview</h1>
-          <button type="button" onClick={this.back}>
-            Close
-          </button>
-        </div>
-      </div>
+      <Modal onRequestClose={this.back} show={true}>
+        <GridX>
+          <Cell span="large-6">
+            <ProductModalImages />
+          </Cell>
+          <Cell span="large-6">
+            <ProductModalInfo {...this.props} />
+          </Cell>
+        </GridX>
+      </Modal>
     )
   }
 }

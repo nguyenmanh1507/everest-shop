@@ -1,12 +1,19 @@
 // @flow
 
 import React, { Component, Fragment } from 'react'
+import { Link } from 'react-router-dom'
 
 import ColorsList from 'Components/ColorsList'
 import SizesList from 'Components/SizesList'
 
-class ProductDetailInfo extends Component<{}> {
+type Props = {
+  match: Object
+}
+
+class ProductModalInfo extends Component<Props> {
   render() {
+    const { match: { params } } = this.props
+
     return (
       <Fragment>
         <div className="d-flex mb-lg">
@@ -37,12 +44,12 @@ class ProductDetailInfo extends Component<{}> {
             </div>
           </div>
           <div>
-            <button className="btn btn--bordered mr-sm">
-              <i className="fa fa-chevron-left" />
-            </button>
-            <button className="btn btn--bordered">
-              <i className="fa fa-chevron-right" />
-            </button>
+            <Link
+              to={`/products/${params.productSlug}`}
+              className="btn btn--secondary mr-sm"
+            >
+              More information <i className="fa fa-chevron-right" />
+            </Link>
           </div>
         </div>
 
@@ -151,4 +158,4 @@ class ProductDetailInfo extends Component<{}> {
   }
 }
 
-export default ProductDetailInfo
+export default ProductModalInfo

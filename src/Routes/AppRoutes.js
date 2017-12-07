@@ -4,7 +4,7 @@ import React, { Component, Fragment } from 'react'
 import { Switch, Route } from 'react-router-dom'
 import uniqueId from 'lodash/uniqueId'
 
-import RouteWithSubRoutes from './RouteWithSubRoutes'
+// import RouteWithSubRoutes from './RouteWithSubRoutes'
 import HomePage from 'Pages/HomePage'
 import CategoriesPage from 'Pages/CategoriesPage'
 import ProductDetailPage from 'Pages/ProductDetailPage'
@@ -25,17 +25,16 @@ const routes = [
   {
     path: '/women',
     component: CategoriesPage,
-    exact: true
-  },
-  {
-    path: '/women/:categoryId',
-    component: CategoriesPage,
-    exact: true
-  },
-  {
-    path: '/women/:categoryId/:productKindId',
-    component: CategoriesPage,
-    exact: true
+    // routes: [
+    //   {
+    //     path: '/women/:categoryId',
+    //     component: CategoriesPage
+    //   },
+    //   {
+    //     path: '/women/:categoryId/:productKindId',
+    //     component: CategoriesPage
+    //   }
+    // ]
   },
   {
     path: '/men',
