@@ -25,47 +25,26 @@ const navItemsConfig: navItemsType = [
   },
   {
     title: 'Women',
-    path: '/women',
+    path: '/categories/women',
     megaMenu: [
       {
         title: 'Clothing',
         items: [
           {
             title: 'Shirts',
-            path: '/women/clothing/shirts'
+            path: '/categories/women/clothing/shirts'
           },
           {
             title: 'Sweaters',
-            path: '/women/clothing/sweaters'
+            path: '/categories/women/clothing/sweaters'
           },
           {
             title: 'Pants',
-            path: '/women/clothing/pants'
+            path: '/categories/women/clothing/pants'
           },
           {
             title: 'Jeans',
-            path: '/women/clothing/jeans'
-          }
-        ]
-      },
-      {
-        title: 'Clothing',
-        items: [
-          {
-            title: 'Shirts',
-            path: '/women/clothing/shirts'
-          },
-          {
-            title: 'Sweaters',
-            path: '/women/clothing/sweaters'
-          },
-          {
-            title: 'Pants',
-            path: '/women/clothing/pants'
-          },
-          {
-            title: 'Jeans',
-            path: '/women/clothing/jeans'
+            path: '/categories/women/clothing/jeans'
           }
         ]
       }

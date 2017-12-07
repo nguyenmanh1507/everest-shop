@@ -12,17 +12,17 @@ import Breadcrumb from '../Breadcrumb'
 configure({ adapter: new Adapter() })
 
 test('Breadcrumb render properly', () => {
-  const match = { url: '/women/clothing/jeans' }
+  const pathname = '/women/clothing/jeans'
 
-  const component = renderer.create(renderBreadcrumb(match))
+  const component = renderer.create(renderBreadcrumb(pathname))
 
   const tree = component.toJSON()
   expect(tree).toMatchSnapshot()
 })
 
 describe('<Breadcrumb />', () => {
-  const match = { url: '/women/clothing/jeans' }
-  const wrapper = render(renderBreadcrumb(match))
+  const pathname = '/women/clothing/jeans'
+  const wrapper = render(renderBreadcrumb(pathname))
 
   test("Always render homepage's link", () => {
     expect(wrapper.find('[data-test="bc-homepage-link"]')).toHaveLength(1)
@@ -38,17 +38,17 @@ describe('<Breadcrumb />', () => {
   })
 
   test('Items has same length with URL path', () => {
-    const pathLength = split(trimStart(match.url, '/'), '/').length
+    const pathLength = split(trimStart(pathname, '/'), '/').length
     expect(wrapper.find('[data-test="bc-item"]')).toHaveLength(pathLength)
   })
 })
 
-function renderBreadcrumb(match) {
+function renderBreadcrumb(pathname) {
   const context = {}
 
   return (
     <StaticRouter context={context}>
-      <Breadcrumb match={match} />
+      <Breadcrumb pathname={pathname} />
     </StaticRouter>
   )
 }

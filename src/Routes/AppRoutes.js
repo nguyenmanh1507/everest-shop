@@ -44,8 +44,7 @@ class AppRoutes extends Component<Props> {
         <Switch location={isModal ? this.previousLocation : location}>
           {/* Don't know why modal not work if use <RouteWithSubRoutes key={uniqueId('app-routes-')} {...route} /> instead */}
           <Route path="/" exact={true} component={HomePage} />
-          <Route path="/women" component={CategoriesPage} />
-          <Route path="/men" component={CategoriesPage} />
+          <Route path="/categories" component={CategoriesPage} />
           <Route path="/products/:productSlug" component={ProductDetailPage} />
           <Route path="/about" component={AboutPage} />
           <Route path="/contact" component={ContactPage} />

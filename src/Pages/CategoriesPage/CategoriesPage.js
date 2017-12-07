@@ -1,6 +1,7 @@
 // @flow
 
 import React, { Component } from 'react'
+import { Switch, Route } from 'react-router-dom'
 
 import Breadcrumb from 'Components/Breadcrumb'
 import CategoriesPageSidebar from './CategoriesPageSidebar'
@@ -8,17 +9,19 @@ import { GridXContainer, Cell } from 'Components/Layouts'
 import Banner from 'Components/Banner'
 import CategoriesPageFilter from './CategoriesPageFilter'
 import CategoriesPageProductList from './CategoriesPageProductList'
+import CategoriesPageProductListByGender from './CategoriesPageProductListByGender'
+import CategoriesPageProductListByCategory from './CategoriesPageProductListByCategory'
 
 type Props = {
-  match: Object
+  location: Object
 }
 
 class CategoriesPage extends Component<Props> {
   render() {
-    const { match } = this.props
+    const { location } = this.props
     return (
       <div>
-        <Breadcrumb match={match} />
+        <Breadcrumb pathname={location.pathname} />
         <GridXContainer exClass="py-lg">
           <Cell span="small-3">
             <CategoriesPageSidebar />
@@ -30,8 +33,27 @@ class CategoriesPage extends Component<Props> {
               bgImage="https://unsplash.it/800/450?image=230"
               exClass="mb-md"
             />
+
             <CategoriesPageFilter />
-            <CategoriesPageProductList />
+
+            <Switch>
+              <Route
+                path="/categories/:genderSlug"
+                component={CategoriesPageProductListByGender}
+                exact={true}
+              />
+              <Route
+                path="/categories/:genderSlug/:catSlug"
+                component={CategoriesPageProductListByCategory}
+                exact={true}
+              />
+              <Route
+                path="/categories/:genderSlug/:catSlug/:productKindSlug"
+                component={CategoriesPageProductListByCategory}
+                exact={true}
+              />
+              <Route component={CategoriesPageProductList} />
+            </Switch>
           </Cell>
         </GridXContainer>
       </div>

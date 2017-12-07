@@ -7,16 +7,14 @@ import { startCase, trimStart, split, uniqueId } from 'lodash'
 import { GridContainer } from 'Components/Layouts'
 
 type Props = {
-  match: {
-    url: string
-  }
+  pathname: string
 }
 
 class Breadcrumb extends Component<Props> {
   render() {
-    const { match: { url } } = this.props
+    const { pathname } = this.props
 
-    const newUrl = split(trimStart(url, '/'), '/')
+    const newUrl = split(trimStart(pathname, '/'), '/')
     let breadcrumbUrl = ''
 
     return (

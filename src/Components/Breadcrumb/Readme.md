@@ -4,6 +4,6 @@ Breadcrumb example
 const { BrowserRouter } = require('react-router-dom');
 
 <BrowserRouter>
-  <Breadcrumb match={{url: '/women/clothing/t-shirts'}} />
+  <Breadcrumb pathname="/women/clothing/t-shirts" />
 </BrowserRouter>
 ```
