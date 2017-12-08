@@ -2,28 +2,42 @@
 
 import React, { Component } from 'react'
 
+import HeroCarousel from 'Components/HeroCarousel'
+
+const data = [
+  {
+    bgImage: 'https://unsplash.it/2100/900/?image=220',
+    title: 'Spring Collection',
+    subTitle: 'Unique & Simple style 2018',
+    ctaText: 'Shop now',
+    ctaUrl: '/'
+  },
+  {
+    bgImage: 'https://unsplash.it/2100/900/?image=221',
+    title: 'Spring Collection',
+    subTitle: 'Unique & Simple style 2018',
+    ctaText: 'Shop now',
+    ctaUrl: '/'
+  },
+  {
+    bgImage: 'https://unsplash.it/2100/900/?image=222',
+    title: 'Spring Collection',
+    subTitle: 'Unique & Simple style 2018',
+    ctaText: 'Shop now',
+    ctaUrl: '/'
+  },
+  {
+    bgImage: 'https://unsplash.it/2100/900/?image=223',
+    title: 'Spring Collection',
+    subTitle: 'Unique & Simple style 2018',
+    ctaText: 'Shop now',
+    ctaUrl: '/'
+  }
+]
+
 class HomePageHero extends Component<{}> {
   render() {
-    return (
-      <section className="hero">
-        <div
-          className="hero__item"
-          style={{
-            backgroundImage: 'url(https://unsplash.it/2100/900/?image=268)'
-          }}
-        >
-          <div className="hero__content text-center">
-            <h2 className="hero__title mb-xs">Spring Collection</h2>
-            <h3 className="hero__sub-title mb-md">
-              Unique & Simple style 2018
-            </h3>
-            <button className="btn btn--rounded btn--secondary btn--large text-uppercase">
-              Shop now
-            </button>
-          </div>
-        </div>
-      </section>
-    )
+    return <HeroCarousel data={data} />
   }
 }
 
