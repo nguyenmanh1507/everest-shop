@@ -3,13 +3,20 @@
 import React, { Component, Fragment } from 'react'
 
 type Props = {
+  /** Modal content */
   children: any,
+  /** Action u want modal do when click close button */
   onRequestClose: (e: SyntheticEvent<HTMLElement>) => void,
+  /** Modal show by default or not */
   show?: boolean
 }
 
 class Modal extends Component<Props> {
   modal: ?HTMLDivElement
+
+  static defaultPropTypes = {
+    show: false
+  }
 
   handleOnWheel = (e: SyntheticWheelEvent<>) => {
     if (this.modal) {
@@ -49,13 +56,15 @@ class Modal extends Component<Props> {
             </div>
           </div>
         </div>
-        <div
-          className="modal-backdrop"
-          onClick={onRequestClose}
-          onWheel={e => {
-            e.preventDefault()
-          }}
-        />
+        {show && (
+          <div
+            className="modal-backdrop"
+            onClick={onRequestClose}
+            onWheel={e => {
+              e.preventDefault()
+            }}
+          />
+        )}
       </Fragment>
     )
   }

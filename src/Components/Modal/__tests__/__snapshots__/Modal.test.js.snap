@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Modal render properly 1`] = `
+exports[`Modal render default show true 1`] = `
 Array [
   <div
     className="modal"
@@ -8,7 +8,7 @@ Array [
     role="dialog"
     style={
         Object {
-            "display": null,
+            "display": "block",
           }
     }
     tabIndex="-1"
@@ -47,4 +47,46 @@ Array [
     onWheel={[Function]}
 />,
 ]
+`;
+
+exports[`Modal render properly 1`] = `
+<div
+  className="modal"
+  onWheel={[Function]}
+  role="dialog"
+  style={
+    Object {
+      "display": null,
+    }
+  }
+  tabIndex="-1"
+>
+  <div
+    className="modal__dialog"
+    role="document"
+  >
+    <div
+      className="modal__content"
+    >
+      <div
+        className="modal__body"
+      >
+        <h1>
+          Modal content go here
+        </h1>
+      </div>
+      <button
+        aria-label="Close"
+        className="modal__btn-close"
+        data-dismiss="modal"
+        onClick={[Function]}
+        type="button"
+      >
+        <i
+          className="fa fa-times fa-lg"
+        />
+      </button>
+    </div>
+  </div>
+</div>
 `;

@@ -14,7 +14,8 @@
     "react-scripts": "1.0.17",
     "redux": "^3.7.2",
     "reduxsauce": "^0.7.0",
-    "seamless-immutable": "^7.1.2"
+    "seamless-immutable": "^7.1.2",
+    "siema": "^1.4.7"
   },
   "scripts": {
     "start": "react-scripts start",

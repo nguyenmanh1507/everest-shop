@@ -1,6 +1,6 @@
 // @flow
 
-import React, { Component } from 'react'
+import React, { Component, Fragment } from 'react'
 
 import CheckoutPageRoutes from 'Routes/CheckoutPageRoutes'
 import CheckoutPageStep from './CheckoutPageStep'
@@ -15,16 +15,16 @@ type Props = {
 
 class CheckoutPage extends Component<Props> {
   render() {
-    const { routes, match, location, ...rest } = this.props
+    const { routes, location, ...rest } = this.props
 
     return (
-      <div>
-        <Breadcrumb match={match} />
+      <Fragment>
+        <Breadcrumb pathname={location.pathname} />
         <GridContainer exClass="py-xl">
           <CheckoutPageStep location={location} />
           <CheckoutPageRoutes routes={routes} {...rest} />
         </GridContainer>
-      </div>
+      </Fragment>
     )
   }
 }

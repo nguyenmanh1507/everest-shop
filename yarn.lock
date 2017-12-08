@@ -6797,6 +6797,10 @@ shellwords@^0.1.0:
   version "0.1.1"
   resolved "https://registry.yarnpkg.com/shellwords/-/shellwords-0.1.1.tgz#d6b9181c1a48d397324c84871efbcfc73fc0654b"
 
+siema@^1.4.7:
+  version "1.4.7"
+  resolved "https://registry.yarnpkg.com/siema/-/siema-1.4.7.tgz#5cceae8099f931780fa7a5d81e858fb6260d5298"
+
 signal-exit@^3.0.0, signal-exit@^3.0.2:
   version "3.0.2"
   resolved "https://registry.yarnpkg.com/signal-exit/-/signal-exit-3.0.2.tgz#b5fdc08f1287ea1178628e415e25132b73646c6d"

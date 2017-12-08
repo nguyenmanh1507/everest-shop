@@ -12,10 +12,9 @@ class HomePageNewArrivals extends Component<{}> {
         <Cell span="small-12" exClass="mb-md">
           <HeadingClods title="New Arrivals" />
         </Cell>
-        <Cell span="small-3">
-          {[1, 2, 3, 4].map(item => (
+        {[1, 2, 3, 4].map(item => (
+          <Cell span="small-3" key={`home-page-new-arrivals-${item}`}>
             <CardSeel
-              key={`home-page-new-arrivals-${item}`}
               imgSrc="https://unsplash.it/270/360"
               title="T-Shirt Stripes Unique"
               url="/"
@@ -24,8 +23,8 @@ class HomePageNewArrivals extends Component<{}> {
               catUrl="/"
               price="$299"
             />
-          ))}
-        </Cell>
+          </Cell>
+        ))}
       </GridX>
     )
   }
