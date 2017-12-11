@@ -6,6 +6,8 @@ import { Link } from 'react-router-dom'
 import Navigation from 'Components/Navigation'
 import SearchBar from './SearchBar'
 import { GridXContainer, GridContainer, GridX, Cell } from 'Components/Layouts'
+import ChangeLanguages from './ChangeLanguages'
+import ChangeCurrencies from './ChangeCurrencies'
 import logoImage from '../../static/images/logo.png'
 
 class Header extends Component<{}> {
@@ -30,22 +32,19 @@ class Header extends Component<{}> {
                 </ul>
               </div>
               <div>
-                <ul className="list-separate text-small">
-                  <li>
-                    <div className="text-muted">
-                      <i className="fa fa-globe" /> Eng{' '}
-                      <i className="fa fa-caret-down" />
-                    </div>
-                  </li>
-                  <li className="text-muted">
-                    USD <i className="fa fa-caret-down" />
-                  </li>
-                  <li>
+                <div className="list-separate text-small">
+                  <div className="list-item">
+                    <ChangeLanguages />
+                  </div>
+                  <div className="list-item">
+                    <ChangeCurrencies />
+                  </div>
+                  <div className="list-item">
                     <Link to="/" className="text-muted">
                       Your Account
                     </Link>
-                  </li>
-                </ul>
+                  </div>
+                </div>
               </div>
             </Cell>
           </GridXContainer>
@@ -61,7 +60,7 @@ class Header extends Component<{}> {
             </Cell>
             <Cell span="medium-7" exClass="d-flex">
               <SearchBar />
-              <Link to="/checkout" className="d-flex">
+              <Link to="/checkout/shopping-cart" className="d-flex">
                 <i className="fa fa-shopping-bag fa-2x" />
                 <div className="ml-sm">
                   <div className="text-muted text-small">Your Cart (2)</div>
