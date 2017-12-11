@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "classnames": "^2.2.5",
+    "downshift": "^1.22.3",
     "firebase": "^4.6.2",
     "flow-bin": "^0.59.0",
     "lodash": "^4.17.4",
