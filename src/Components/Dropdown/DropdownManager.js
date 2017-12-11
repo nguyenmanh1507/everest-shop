@@ -2,7 +2,14 @@
 
 import * as React from 'react'
 
+/**
+ * DropdownManager
+ * 
+ * @deprecated will be removed later
+ */
+
 type Props = {
+  /** @deprecated dont use this */
   render: ({ isShow: boolean, toggle: () => void }) => React.Node
 }
 

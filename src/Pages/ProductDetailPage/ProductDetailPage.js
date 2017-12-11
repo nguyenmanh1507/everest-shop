@@ -1,18 +1,26 @@
 // @flow
 
-import React, { Component } from 'react'
+import React, { Component, Fragment } from 'react'
 
 import { Cell, GridXContainer, GridContainer } from 'Components/Layouts'
 import ProductDetailInfo from './ProductDetailInfo'
 import ProductDetailImages from './ProductDetailImages'
 import ProductDetailExtraInfo from './ProductDetailExtraInfo'
 import ProductDetailRelatedProducts from './ProductDetailRelatedProducts'
+import Breadcrumb from 'Components/Breadcrumb'
 
-class ProductDetailPage extends Component<{}> {
+type Props = {
+  location: Object
+}
+
+class ProductDetailPage extends Component<Props> {
   render() {
+    const { location } = this.props
+
     return (
-      <div className="py-lg">
-        <GridXContainer>
+      <Fragment>
+        <Breadcrumb pathname={location.pathname} />
+        <GridXContainer exClass="py-lg">
           <Cell span="large-6">
             <ProductDetailImages />
           </Cell>
@@ -24,7 +32,7 @@ class ProductDetailPage extends Component<{}> {
           <ProductDetailExtraInfo />
         </GridContainer>
         <ProductDetailRelatedProducts />
-      </div>
+      </Fragment>
     )
   }
 }

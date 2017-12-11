@@ -1,0 +1,81 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SliderIni render properly 1`] = `
+<div
+  className="eps"
+>
+  <div
+    className="eps__content"
+  >
+    <img
+      alt="Description go here"
+      data-test="eps-content-img"
+      src="https://unsplash.it/420/560?image=244"
+    />
+    <button
+      className="eps__cta"
+    >
+      <i
+        className="fa fa-arrows-alt"
+      />
+    </button>
+  </div>
+  <div
+    className="eps__list-thumbnail"
+  >
+    <div
+      className="eps__thumbnail active"
+      data-test="eps-thumbnail"
+      onClick={[Function]}
+    >
+      <img
+        alt="Description go here"
+        className="eps__thumbnail-img"
+        src="https://unsplash.it/90/120?image=244"
+      />
+    </div>
+    <div
+      className="eps__thumbnail"
+      data-test="eps-thumbnail"
+      onClick={[Function]}
+    >
+      <img
+        alt="Description go here"
+        className="eps__thumbnail-img"
+        src="https://unsplash.it/90/120?image=241"
+      />
+    </div>
+    <div
+      className="eps__thumbnail"
+      data-test="eps-thumbnail"
+      onClick={[Function]}
+    >
+      <img
+        alt="Description go here"
+        className="eps__thumbnail-img"
+        src="https://unsplash.it/90/120?image=242"
+      />
+    </div>
+    <div
+      className="eps__paginate"
+    >
+      <button
+        className="eps__paginate-btn"
+        onClick={[Function]}
+      >
+        <i
+          className="fa fa-angle-up"
+        />
+      </button>
+      <button
+        className="eps__paginate-btn"
+        onClick={[Function]}
+      >
+        <i
+          className="fa fa-angle-down"
+        />
+      </button>
+    </div>
+  </div>
+</div>
+`;

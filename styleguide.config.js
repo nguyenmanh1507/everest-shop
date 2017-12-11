@@ -9,7 +9,8 @@ module.exports = {
     '**/Components/ColorsList/Color.js',
     '**/Components/SizesList/Size.js',
     '**/Components/TabKikoi/!(TabKikoiContainer.js)',
-    '**/Components/HeroCarousel/!(HeroCarousel.js)'
+    '**/Components/HeroCarousel/!(HeroCarousel.js)',
+    '**/Components/SliderIni/!(SliderIni.js)'
   ],
   template: './src/rsg-templates/index.html'
 }

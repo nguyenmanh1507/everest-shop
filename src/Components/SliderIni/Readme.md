@@ -1,9 +1,6 @@
-// @flow
+SliderIni example
 
-import React, { Component } from 'react'
-
-import SliderIni from 'Components/SliderIni'
-
+```js
 const data = [
   {
     imgSrc: 'https://unsplash.it/420/560?image=244',
@@ -20,12 +17,7 @@ const data = [
     imgSrcThumbnail: 'https://unsplash.it/90/120?image=242',
     description: 'Description go here'
   }
-]
+];
 
-class ProductDetailImages extends Component<{}> {
-  render() {
-    return <SliderIni data={data} />
-  }
-}
-
-export default ProductDetailImages
+<SliderIni data={data} />
+```

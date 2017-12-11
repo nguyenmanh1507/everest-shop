@@ -1,6 +1,6 @@
 // @flow
 
-import React, { Component } from 'react'
+import React, { Component, Fragment } from 'react'
 import { Switch, Route } from 'react-router-dom'
 
 import Breadcrumb from 'Components/Breadcrumb'
@@ -11,6 +11,7 @@ import CategoriesPageFilter from './CategoriesPageFilter'
 import CategoriesPageProductList from './CategoriesPageProductList'
 import CategoriesPageProductListByGender from './CategoriesPageProductListByGender'
 import CategoriesPageProductListByCategory from './CategoriesPageProductListByCategory'
+import CategoriesPageProductListByKind from './CategoriesPageProductListByKind'
 
 type Props = {
   location: Object
@@ -20,7 +21,7 @@ class CategoriesPage extends Component<Props> {
   render() {
     const { location } = this.props
     return (
-      <div>
+      <Fragment>
         <Breadcrumb pathname={location.pathname} />
         <GridXContainer exClass="py-lg">
           <Cell span="small-3">
@@ -49,14 +50,14 @@ class CategoriesPage extends Component<Props> {
               />
               <Route
                 path="/categories/:genderSlug/:catSlug/:productKindSlug"
-                component={CategoriesPageProductListByCategory}
+                component={CategoriesPageProductListByKind}
                 exact={true}
               />
               <Route component={CategoriesPageProductList} />
             </Switch>
           </Cell>
         </GridXContainer>
-      </div>
+      </Fragment>
     )
   }
 }

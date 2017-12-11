@@ -19,7 +19,7 @@ class CategoriesPageProductListByKind extends Component<{}> {
             key={uniqueId('categories-page-product-list-')}
           >
             <CardSeel
-              imgSrc={`https://unsplash.it/270/360?image=11${index}`}
+              imgSrc={`https://unsplash.it/270/360?image=16${index}`}
               title="T-Shirt Stripes Unique"
               url="/products/t-shirt-stripes-unique-zacfa31dse"
               previewUrl="/preview/t-shirt-stripes-unique-zacfa31dse"

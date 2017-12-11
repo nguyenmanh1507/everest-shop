@@ -1,7 +1,7 @@
 // @flow
 
 import React, { Component, Fragment } from 'react'
-import { Switch, Route } from 'react-router-dom'
+import { Switch, Route, Redirect } from 'react-router-dom'
 
 // import RouteWithSubRoutes from './RouteWithSubRoutes'
 import HomePage from 'Pages/HomePage'
@@ -43,6 +43,7 @@ class AppRoutes extends Component<Props> {
       <Fragment>
         <Switch location={isModal ? this.previousLocation : location}>
           {/* Don't know why modal not work if use <RouteWithSubRoutes key={uniqueId('app-routes-')} {...route} /> instead */}
+          <Redirect exact from="/products" to="/categories" />
           <Route path="/" exact={true} component={HomePage} />
           <Route path="/categories" component={CategoriesPage} />
           <Route path="/products/:productSlug" component={ProductDetailPage} />
