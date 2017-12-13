@@ -3,7 +3,9 @@
 import React, { Component, Fragment } from 'react'
 import { Switch, Route, Redirect } from 'react-router-dom'
 
-// import RouteWithSubRoutes from './RouteWithSubRoutes'
+import '../static/styles/style.min.css'
+import Header from 'Components/Header'
+import Footer from 'Components/Footer'
 import HomePage from 'Pages/HomePage'
 import CategoriesPage from 'Pages/CategoriesPage'
 import ProductDetailPage from 'Pages/ProductDetailPage'
@@ -41,6 +43,7 @@ class AppRoutes extends Component<Props> {
 
     return (
       <Fragment>
+        <Header />
         <Switch location={isModal ? this.previousLocation : location}>
           {/* Don't know why modal not work if use <RouteWithSubRoutes key={uniqueId('app-routes-')} {...route} /> instead */}
           <Redirect exact from="/products" to="/categories" />
@@ -55,6 +58,7 @@ class AppRoutes extends Component<Props> {
         {isModal ? (
           <Route path="/preview/:productSlug" component={ProductModal} />
         ) : null}
+        <Footer />
       </Fragment>
     )
   }
