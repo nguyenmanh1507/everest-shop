@@ -1,5 +1,6 @@
 {
   "name": "everest-shop",
+  "homepage": "https://nguyenmanh1507.github.io/everest-shop",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -19,6 +20,8 @@
     "siema": "^1.4.7"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
@@ -30,6 +33,7 @@
   "devDependencies": {
     "enzyme": "^3.2.0",
     "enzyme-adapter-react-16": "^1.1.0",
+    "gh-pages": "^1.1.0",
     "husky": "^0.15.0-beta.13",
     "react-styleguidist": "^6.0.33",
     "react-test-renderer": "^16.2.0"
