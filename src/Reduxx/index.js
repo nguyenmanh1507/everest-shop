@@ -6,7 +6,8 @@ import configureStore from './CreateStore'
 const createStore = () => {
   /* ------------- Assemble The Reducers ------------- */
   const rootReducer = combineReducers({
-    login: require('./LoginRedux').reducer
+    login: require('./LoginRedux').reducer,
+    products: require('./productsRedux').reducer
   })
 
   return configureStore(rootReducer)

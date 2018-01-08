@@ -5,27 +5,32 @@ import uniqueId from 'lodash/uniqueId'
 
 import { GridX, Cell } from 'Components/Layouts'
 import CardSeel from 'Components/CardSeel'
+import { withProductsData } from 'HOCs'
 
-const data = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+type Props = {
+  products: Object
+}
 
-class CategoriesPageProductListByGender extends Component<{}> {
+class CategoriesPageProductListByGender extends Component<Props> {
   render() {
+    const { products: { data } } = this.props
+
     return (
       <GridX>
-        {data.map((d, index) => (
+        {data.map(d => (
           <Cell
             span="medium-4"
             exClass="mb-md"
             key={uniqueId('categories-page-product-list-')}
           >
             <CardSeel
-              imgSrc={`https://unsplash.it/270/360?image=11${index}`}
-              title="T-Shirt Stripes Unique"
+              imgSrc={d.previewImg}
+              title={d.name}
               url="/products/t-shirt-stripes-unique-zacfa31dse"
               previewUrl="/preview/t-shirt-stripes-unique-zacfa31dse"
-              catName="Coat"
-              catUrl="/"
-              price="$299"
+              catName={d.category}
+              catUrl={`${d.gender}/${d.category}`}
+              price={`$${Number(d.price)}`}
             />
           </Cell>
         ))}
@@ -34,4 +39,4 @@ class CategoriesPageProductListByGender extends Component<{}> {
   }
 }
 
-export default CategoriesPageProductListByGender
+export default withProductsData(CategoriesPageProductListByGender)
